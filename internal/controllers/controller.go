@@ -18,7 +18,7 @@ func (c *Controller) HandleRequests(w http.ResponseWriter, r *http.Request) {
 
 	switch {
 	case n == 3 && p[2] == "version" && r.Method == "GET":
-		// c.getVersion(w, r)
+		c.getVersion(w, r)
 	case n == 3 && p[2] == "hello" && r.Method == "POST":
 		c.postHello(w, r)
 	default:
