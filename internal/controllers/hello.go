@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/juby-gif/apple-server/internal/models"
+	"github.com/juby-gif/apple-server/utils/models"
 )
 
 func (c *Controller) postHello(w http.ResponseWriter, r *http.Request) {
